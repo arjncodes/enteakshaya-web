@@ -43,10 +43,11 @@
 }
 
 body {
-    background-color: var(--white);
-    color: var(--dark);
-    overflow-x: hidden;
-    overflow-y: hidden; /* Managed by JS for preloader */
+  background-color: var(--white);
+  color: var(--dark);
+  overflow-x: hidden;   /* keep horizontal hidden */
+  overflow-y: auto;     /* <-- was hidden */
+  margin: 0;            /* make sure there’s no default margin */
 }
 
 .container {
@@ -685,7 +686,8 @@ header {
 }
 
 .hero-image-wrapper {
-    width: 45%;
+    width: 40%; /* was 45%, slightly smaller so text fits and image stays in view */
+    min-width: 220px; /* ensures it never shrinks to nothing */
     position: relative;
     display: flex;
     justify-content: center;
@@ -694,13 +696,14 @@ header {
 }
 
 .hero-image {
-    width: 85%;
-    max-width: 400px;
+    width: 95%; /* was 85%, lets it use more of wrapper space */
+    max-width: 360px; /* was 400px, slightly smaller to avoid overflow */
     position: relative;
     z-index: 2;
     animation: float 6s ease-in-out infinite;
 }
 
+/* Keep your existing animations unchanged */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); }
@@ -718,6 +721,7 @@ header {
     50% { transform: scale(1.05); opacity: 0.5; }
     100% { transform: scale(1); opacity: 0.3; }
 }
+
 
 
 /* About Section */
@@ -3932,3 +3936,4 @@ textarea.form-control {
         padding: 12px;
     }
 }
+
