@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enteakshaya</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header data-aos="fade-down">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">ente<span>akshaya</span>.</a>
+                <nav>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="all-services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="affidavits.html" class="nav-link">Affidavits</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                        <li class="nav-item"><a href="https://www.instagram.com/enteakshaya/" target="_blank" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="get-in-touch" data-aos="fade-left" data-aos-delay="200">
+                    <i class="fab fa-whatsapp"></i>
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!--CALL TO ACTION (CTA)-->
+
+    <section class="whatsapp-cta-div" id="contact-wp">
+        <div class="container whatsapp-cta-div-container">
+            <div class="cta-text" data-aos="fade-right">
+                <h2>Need assistance? Chat with us now!</h2>
+                <p>Our documentation experts are just a message away.</p>
+            </div>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="whatsapp-btn-cta" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fab fa-whatsapp"></i> Start WhatsApp Chat
+            </a>
+            <a href="tel:+919XXXXXXXXX" class="whatsapp-btn-cta" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-phone-alt"></i> Call Us Now
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Services Section HTML -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <div class="services-container">
+                <div class="services-search" data-aos="fade-up" data-aos-delay="100">
+                    <input type="text" placeholder="Search for a service..." id="service-search">
+                    <button type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="services-tabs" data-aos="fade-up" data-aos-delay="200">
+                    <div class="services-tab active" data-category="all">All Services</div>
+                    <div class="services-tab" data-category="certificates">Certificates</div>
+                    <div class="services-tab" data-category="licenses">Licenses</div>
+                    <div class="services-tab" data-category="registrations">Registrations</div>
+                    <div class="services-tab" data-category="permits">Permits</div>
+                    <div class="services-tab" data-category="applications">Applications</div>
+                    <div class="services-tab" data-category="others">Others</div>
+                </div>
+                <div class="services-list" id="services-list" data-aos="fade-up" data-aos-delay="300">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="service-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="modal-title" id="modal-service-title"></h2>
+            <p class="modal-description" id="modal-service-description"></p>
+            <div class="documents-needed">
+                <h3 class="documents-title">
+                    <i class="fas fa-file-alt"></i>
+                    Documents Required
+                </h3>
+                <ul class="documents-list" id="modal-documents-list">
+                </ul>
+            </div>
+            <div class="service-cta">
+                <a href="#" class="service-cta-btn" id="modal-whatsapp-link" target="_blank">
+                    <i class="fas fa-paper-plane"></i> Get Your Service Done
+                </a>
+                <p class="service-cta-note">Click the button to start the process via WhatsApp</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Section with Map -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            
+            <!-- Map and Info Container -->
+            <div class="contact-container">
+                <!-- Left Side: Map & Trust Badges -->
+                <div class="contact-map-container">
+                    <!-- Interactive Map -->
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62605.43520695048!2d75.92402410941058!3d11.273191338069052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xabadaf145a77f3b1%3A0x6fa847add44b1ca6!2senteakshaya!5e0!3m2!1sen!2sin!4v1754576846045!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Trust Badges -->
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <div class="trust-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="trust-text">
+                                <span>Secure Communication</span>
+                            </div>
+                        </div>
+                        
+                        <div class="trust-badge">
+                            <div class="trust-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="trust-text">
+                                <span>24/7 Support</span>
+                            </div>
+                        </div>
+                        
+                        <div class="trust-badge">
+                            <div class="trust-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="trust-text">
+                                <span>10,000+ Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Info Cards (Existing) -->
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Enteakshaya, KPS Tower, Malappuram, Kerala, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+919946280727" target="_blank">+91 9946280727</a>
+                                <div class="response-badge">Quick response</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/919946280727" target="_blank">+91 9946280727</a>
+                                <div class="response-badge">Online now</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:enteakshaya@outlook.com" target="_blank">enteakshaya@outlook.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/enteakshaya/" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/enteakshaya/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side: Enhanced Contact Form -->
+                <div class="contact-form">
+                    <div class="form-header">
+                        <div class="customer-satisfaction">
+                            <div class="satisfaction-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="satisfaction-text">
+                                <span class="satisfaction-rating">4.9/5</span> customer satisfaction
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <div class="privacy-notice">
+                            <i class="fas fa-lock privacy-icon"></i>
+                            <span>Your information is secure and will never be shared</span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer" aria-labelledby="footer-heading">
+    <div class="container">
+        <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-col footer-about">
+            <h3 id="footer-heading">About EnteAkshaya</h3>
+            <p>EnteAkshaya is a virtual documentation platform launched by Bus Stand Akshaya Areekode. We provide secure, fast, WhatsApp-based documentation services for Keralites, both in India and abroad.</p>
+            <p>With 10+ years of trusted experience, we're Malappuram’s most reliable name in digital documentation.</p>
+            <a href="https://wa.me/919946280727" class="whatsapp-cta" aria-label="Chat with EnteAkshaya on WhatsApp">
+            <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+            </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+            <li class="footer-link"><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li class="footer-link"><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li class="footer-link"><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li class="footer-link"><a href="#how-it-works"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+            <li class="footer-link"><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+            <li class="footer-link"><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-col">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+            <a href="https://www.facebook.com/enteakshaya" class="social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/enteakshaya" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <!-- <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
+            <a href="https://www.youtube.com/@enteakshaya-media" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="contact-info">
+            <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>KPS Tower, Areekode, Malappuram, Kerala</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+919946280727">+91 99462 80727</a>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:enteakshaya@outlook.com">enteakshaya@outlook.com</a>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+        &copy; 2025 <a href="#">EnteAkshaya</a>. All Rights Reserved. Designed by <a href="https://www.instagram.com/enteakshaya/" target="_blank">Team EnteAkshaya</a>
+        </div>
+    </div>
+    </footer>
+
+    
+    <!-- social media Float Button -->
+    <a href="https://wa.me/919946280727" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <a href="https://instagram.com/enteakshaya" target="_blank" class="instagram-btn">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Add before closing </body> tag -->
+
+
+    <script>
+        AOS.init({
+            // Global settings:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 800, // values from 0 to 3000, with step 50ms
+            easing: 'ease-in-out', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element should trigger the animation
+
+        });
+    </script>
+    <script src="scripts.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>

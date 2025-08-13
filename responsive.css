@@ -1,0 +1,624 @@
+@media screen and (max-width: 1200px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .hero-subtitle {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    .hero-image-wrapper {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 70%;
+        max-width: 300px;
+    }
+
+    /* Blob adjustments for smaller screens */
+    .blob-1 {
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .blob-2 {
+        right: auto;
+        left: 65%;
+        bottom: -10%;
+    }
+
+    /* Footer responsiveness */
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Contact and Why Choose Us sections */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    .why-choose {
+        flex-direction: column;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+
+    /* About section */
+    .section {
+      padding: 60px 15px;
+    }
+    .section-title {
+      font-size: 1.75rem;
+      margin-bottom: 35px;
+    }
+    .section-title::after {
+      width: 60px;
+      height: 3px;
+    }
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    .chat-preview-body {
+      height: 280px;
+    }
+    .chat-bubble {
+      max-width: 85%;
+    }
+
+    /* Timeline responsive adjustments */
+    .timeline::after {
+      left: 31px; /* Adjust central line position */
+    }
+    .timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+    .timeline-item:nth-child(even) {
+      left: 0; /* Align even items to the left */
+    }
+    .timeline-item::after {
+      left: 18px; /* Adjust circle position */
+    }
+    .timeline-item:nth-child(odd)::after {
+      right: auto;
+      left: 18px;
+    }
+
+    /* Stats responsive */
+    .stats-card {
+      padding: 1.5rem;
+    }
+    .stats-header {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .stats-item {
+      padding: 0.75rem 0;
+    }
+    .stats-value {
+      font-size: 1.5rem;
+    }
+
+    /* Google Review responsive */
+    .google-review-section {
+      padding: 3rem 1.5rem;
+    }
+    .review-header h2 {
+      font-size: 1.8rem;
+    }
+    .review-subtitle {
+      font-size: 1.1rem;
+    }
+    .google-review-card {
+      padding: 2.5rem 1.5rem;
+    }
+    .review-message {
+      max-width: 95%;
+      font-size: 0.95rem;
+    }
+
+    /* Services responsive */
+    .services-tabs {
+        gap: 8px;
+        margin-bottom: 25px;
+    }
+    .services-tab {
+        padding: 6px 14px;
+        font-size: 0.85rem;
+    }
+    .services-list {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    .service-icon {
+        font-size: 1.75rem;
+    }
+    .service-title {
+        font-size: 1rem;
+    }
+    .service-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .service-action-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Contact section */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer responsiveness */
+    .footer {
+        padding: 40px 0 20px;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footer-col h3 {
+        font-size: 18px;
+    }
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    /* Header and Mobile Menu */
+    .header-inner {
+        position: relative;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: 250px;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 90%;
+    }
+
+    .blob-1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .blob-2 {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* About section */
+    .section {
+      padding: 50px 10px;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    .about-text {
+      font-size: 0.9375rem;
+    }
+    .about-point {
+      gap: 10px;
+    }
+    .about-point i {
+      font-size: 1.25rem;
+    }
+    .chat-preview-body {
+      height: 220px;
+    }
+    .chat-bubble {
+      max-width: 90%;
+      font-size: 0.8125rem;
+    }
+    .timeline-item {
+      padding-left: 60px;
+      padding-right: 15px;
+    }
+    .timeline-content {
+      padding: 15px;
+    }
+    .timeline-content h3 {
+      font-size: 1.125rem;
+    }
+
+    /* Stats responsive */
+    .stats-card {
+      padding: 1.25rem;
+    }
+    .stats-header {
+      font-size: 1rem;
+    }
+    .stats-label {
+      font-size: 0.9rem;
+    }
+    .stats-value {
+      font-size: 1.25rem;
+    }
+
+    /* Google Review responsive */
+    .google-review-section {
+      padding: 2.5rem 1rem;
+    }
+    .review-header h2 {
+      font-size: 1.5rem;
+    }
+    .review-subtitle {
+      font-size: 1rem;
+    }
+    .star {
+      font-size: 1.5rem;
+    }
+    .google-review-card {
+      padding: 2rem 1rem;
+    }
+    .google-review-btn {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+    }
+
+    /* Services responsive */
+    .services-search {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .services-search button {
+        width: 100%;
+    }
+    .services-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 6px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .services-tab {
+        white-space: nowrap;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+    .services-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .load-more {
+        width: 100%;
+    }
+    .modal-content {
+        padding: 20px;
+        width: 95%;
+    }
+    .modal-close {
+        top: 15px;
+        right: 15px;
+    }
+    .modal-title {
+        font-size: 1.25rem;
+    }
+    .documents-title,
+    .process-title {
+        font-size: 1rem;
+    }
+    .step-item {
+        padding-left: 40px;
+    }
+    .step-item::before {
+        width: 25px;
+        height: 25px;
+        font-size: 0.85rem;
+    }
+    .fees-item {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .fees-amount {
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .fees-item:last-child {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Footer responsiveness */
+    .footer {
+        padding: 30px 0 15px;
+    }
+    .footer-col h3 {
+        font-size: 17px;
+    }
+    .whatsapp-cta {
+        width: 100%;
+        justify-content: center;
+    }
+    .copyright {
+        padding-top: 30px;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    /* About section */
+    .section-title {
+      font-size: 1.375rem;
+    }
+    .header-profile {
+      gap: 5px;
+    }
+    .header-actions {
+      gap: 10px;
+    }
+    .chat-preview-body {
+      height: 200px;
+    }
+    .timeline-item {
+      padding-left: 50px;
+    }
+
+    /* Services responsive */
+    .services-tab {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+    }
+    .service-icon {
+        font-size: 1.5rem;
+    }
+    .documents-item {
+        padding: 8px 0;
+    }
+}
+
+/* Responsive Adjustments for Preloader (from original styles.css, re-added for completeness) */
+@media (max-width: 1024px) {
+    .intro-logo {
+        font-size: 3rem;
+    }
+    .intro-tagline {
+        font-size: 1.1rem;
+    }
+    .whatsapp-intro-phone-container {
+        width: 280px;
+        height: 520px;
+    }
+    .intro-showcase-name {
+        font-size: 0.9rem;
+    }
+    .intro-showcase-status {
+        font-size: 0.7rem;
+    }
+    .intro-showcase-bubble {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-branding {
+        margin-bottom: 20px;
+    }
+    .intro-logo {
+        font-size: 2.5rem;
+    }
+    .intro-tagline {
+        font-size: 1rem;
+    }
+    .whatsapp-intro-phone-container {
+        width: 250px;
+        height: 480px;
+    }
+    .whatsapp-intro-phone-mockup {
+        border-radius: 30px;
+        padding: 10px;
+        border: 5px solid #333;
+    }
+    .whatsapp-intro-phone-mockup::before {
+        width: 80px;
+        height: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .intro-showcase-header {
+        padding: 8px 12px;
+    }
+    .intro-showcase-avatar {
+        width: 30px;
+        height: 30px;
+    }
+    .intro-showcase-name {
+        font-size: 0.8rem;
+    }
+    .intro-showcase-status {
+        font-size: 0.65rem;
+    }
+    .intro-showcase-bubble {
+        font-size: 0.75rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-logo {
+        font-size: 1.8rem;
+    }
+    .intro-tagline {
+        font-size: 0.7rem;
+    }
+    .whatsapp-intro-phone-container {
+        width: 200px;
+        height: 380px;
+    }
+    .whatsapp-intro-phone-mockup {
+        border-radius: 25px;
+        padding: 8px;
+        border: 4px solid #333;
+    }
+    .whatsapp-intro-phone-mockup::before {
+        width: 60px;
+        height: 15px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .intro-showcase-header {
+        padding: 6px 10px;
+    }
+    .intro-showcase-avatar {
+        width: 25px;
+        height: 25px;
+    }
+    .intro-showcase-name {
+        font-size: 0.75rem;
+    }
+    .intro-showcase-status {
+        font-size: 0.6rem;
+    }
+    .intro-showcase-bubble {
+        font-size: 0.65rem;
+        padding: 6px 10px;
+    }
+
+    /* Floating buttons */
+    .whatsapp-btn {
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      bottom: 20px;
+      right: 20px;
+    }
+    .instagram-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        bottom: 80px; /* Adjust position relative to WhatsApp button */
+        right: 20px;
+    }
+}
+
+/* Additional smaller breakpoint for very small mobile devices (from original styles.css, re-added for completeness) */
+@media (max-width: 375px) {
+    .intro-logo {
+        font-size: 1.5rem;
+    }
+    .intro-tagline {
+        font-size: 0.6rem;
+    }
+    .whatsapp-intro-phone-container {
+        width: 180px;
+        height: 340px;
+    }
+    .whatsapp-intro-phone-mockup {
+        border-radius: 20px;
+        padding: 6px;
+        border: 3px solid #333;
+    }
+    .whatsapp-intro-phone-mockup::before {
+        width: 40px;
+        height: 10px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .intro-showcase-header {
+        padding: 5px 8px;
+    }
+    .intro-showcase-avatar {
+        width: 20px;
+        height: 20px;
+    }
+    .intro-showcase-name {
+        font-size: 0.7rem;
+    }
+    .intro-showcase-status {
+        font-size: 0.55rem;
+    }
+    .intro-showcase-bubble {
+        font-size: 0.6rem;
+        padding: 5px 8px;
+    }
+    .trust-badge {
+        flex: 0 0 100%; /* Stack badges on very small screens */
+    }
+}

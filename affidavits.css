@@ -1,0 +1,42 @@
+/* Affidavits – reuse service-card style */
+#affidavits .services-list{ display:grid; gap:16px; grid-template-columns:1fr; }
+@media (min-width:768px){ #affidavits .services-list{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1024px){ #affidavits .services-list{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+
+.affidavit-card{ display:flex; flex-direction:column; gap:10px; background:#fff;
+  border:1px solid #e5e7eb; border-radius:16px; padding:18px;
+  box-shadow:0 1px 2px rgba(0,0,0,.04); transition:transform .15s, box-shadow .15s, border-color .15s; }
+.affidavit-card:hover{ transform:translateY(-2px); box-shadow:0 8px 22px rgba(2,6,23,.07); border-color:#dbe2ea; }
+
+.affidavit-card .service-icon{ width:52px; height:52px; border-radius:12px; display:grid; place-items:center;
+  background:#eef2ff; color:#4338ca; font-size:22px; }
+
+.affidavit-card .service-title{ margin:4px 0 0; font-size:18px; font-weight:700; color:#0f172a; }
+.affidavit-card .service-short-description{ margin:0; font-size:14px; color:#475569; line-height:1.55; }
+
+.affidavit-card .service-meta{ margin-top:4px; }
+.affidavit-card .badge{ display:inline-block; padding:4px 8px; font-size:12px; border-radius:999px;
+  background:#f8fafc; color:#334155; border:1px solid #e5e7eb; }
+
+.affidavit-card .service-actions{ margin-top:10px; display:flex; flex-wrap:wrap; gap:8px; }
+.affidavit-card .btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:10px;
+  font-size:14px; min-height:44px; border:1px solid transparent; text-decoration:none; cursor:pointer;
+  transition:background-color .2s, border-color .2s, transform .1s; }
+.affidavit-card .btn:active{ transform:translateY(1px); }
+
+.affidavit-card .btn-download{ background:#0B5FFF; color:#fff; border-color:#0B5FFF; }
+.affidavit-card .btn-download:hover{ background:#084fe3; border-color:#084fe3; }
+
+.affidavit-card .btn-whatsapp{ background:#00c853; color:#0f172a; border:1px solid #e5e7eb; }
+.affidavit-card .btn-whatsapp:hover{ border-color:#cbd5e1; }
+
+#affidavits .empty-state{ padding:22px; text-align:center; color:#475569; border:1px dashed #e5e7eb; border-radius:14px; background:#fff; }
+
+.btn-download.is-disabled {
+  background: #94a3b8;
+  border-color: #94a3b8;
+}
+.btn-download.is-disabled:hover {
+  background: #64748b;
+  border-color: #64748b;
+}

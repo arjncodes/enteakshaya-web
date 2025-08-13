@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enteakshaya - Kerala's #1 WhatsApp-Based Documentation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- WhatsApp Intro Section (Preloader) -->
+    <!-- <section class="whatsapp-intro-section">
+        <div class="intro-branding">
+            <div class="intro-logo">ente<span>akshaya</span></div>
+            <div class="intro-tagline">Don't Visit Us, Just Contact Us!</div>
+        </div>
+        <div class="whatsapp-intro-phone-container">
+            <div class="whatsapp-intro-phone-mockup">
+                <div class="whatsapp-intro-screen">
+                    <div class="intro-showcase-header">
+                        <div class="intro-showcase-profile">
+                            <img src="/images/ente-akshaya.jpg" alt="Profile" class="intro-showcase-avatar">
+                            <div class="intro-showcase-info">
+                                <div class="intro-showcase-name">enteakshaya</div>
+                                <div class="intro-showcase-status">online</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-showcase-chat-body">
+                        <div class="intro-showcase-bubble intro-sent-bubble chat-bubble-1">
+                            Hello
+                        </div>
+
+                        <div class="intro-showcase-bubble intro-received-bubble chat-bubble-2">
+                            പേപ്പർ വർക്കുകൾ തലവേദനയാ?
+                        </div>
+
+                        <div class="intro-showcase-bubble intro-sent-bubble chat-bubble-3">
+                            അതെ
+                        </div>
+
+                        <div class="intro-showcase-bubble intro-received-bubble chat-bubble-4">
+                            ഇനി സിമ്പിളാണ്!
+                        </div>
+
+                        <div class="intro-showcase-bubble intro-received-bubble chat-bubble-5">
+                            എന്റെഅക്ഷയ ഉണ്ട്
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="new-transition-overlay"></div>
+    </section> -->
+
+    
+    <!-- Header -->
+    <header data-aos="fade-down">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">ente<span>akshaya</span>.</a>
+                <nav>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="all-services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="affidavits.html" class="nav-link">Affidavits</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                        <li class="nav-item"><a href="https://www.instagram.com/enteakshaya/" target="_blank" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="get-in-touch" data-aos="fade-left" data-aos-delay="200">
+                    <i class="fab fa-whatsapp"></i>
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content" data-aos="fade-right">
+                    <h1 class="hero-title">
+                        <!-- Document
+                        <span class="highlight">Preparation</span> at Your Fingertips -->
+                        Kerala’s 
+                        <span class="highlight">#1 WhatsApp-Based</span> Document Preparation Service
+                    </h1>
+                    <p class="hero-subtitle">Complete all your document preparation remotely through our expert virtual assistance. From passports to certificates, affidavits to applications experience paperwork simplified like never before.</p>
+                    <div class="hero-btns" data-aos="fade-right" data-aos-delay="300">
+                        <a href="https://wa.me/919946280727?text=Hello%20Enteakshaya"  target="_blank" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp Now
+                        </a>
+                        <a href="#services" class="btn btn-outline">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper" data-aos="fade-up" data-aos-delay="400">
+                    <img src="images/enteakshaya-person.svg" alt="Document Service" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section HTML -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <div class="services-container">
+                <div class="services-search" data-aos="fade-up" data-aos-delay="100">
+                    <input type="text" placeholder="Search for a service..." id="service-search">
+                    <button type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="services-tabs" data-aos="fade-up" data-aos-delay="200">
+                    <div class="services-tab active" data-category="all">All Services</div>
+                    <div class="services-tab" data-category="certificates">Certificates</div>
+                    <div class="services-tab" data-category="licenses">Licenses</div>
+                    <div class="services-tab" data-category="registrations">Registrations</div>
+                    <div class="services-tab" data-category="permits">Permits</div>
+                    <div class="services-tab" data-category="applications">Applications</div>
+                    <div class="services-tab" data-category="others">Others</div>
+                </div>
+                <div class="services-list" id="services-list" data-aos="fade-up" data-aos-delay="300">
+                    </div>
+                <a href="all-services.html" class="load-more" id="load-more-btn" data-aos="fade-up" data-aos-delay="400">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="service-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="modal-title" id="modal-service-title"></h2>
+            <p class="modal-description" id="modal-service-description"></p>
+            <div class="documents-needed">
+                <h3 class="documents-title">
+                    <i class="fas fa-file-alt"></i>
+                    Documents Required
+                </h3>
+                <ul class="documents-list" id="modal-documents-list">
+                </ul>
+            </div>
+            <div class="service-cta">
+                <a href="#" class="service-cta-btn" id="modal-whatsapp-link" target="_blank">
+                    <i class="fas fa-paper-plane"></i> Get Your Service Done
+                </a>
+                <p class="service-cta-note">Click the button to start the process via WhatsApp</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+    <div class="container">
+        <h2 id="about-title" class="section-title" data-aos="fade-up">About Enteakshaya</h2>
+
+        <div class="about-content">
+        <!-- Left Column: About Text -->
+        <div data-aos="fade-right">
+            <p class="about-text">
+            <strong>Enteakshaya</strong> is Kerala’s leading <strong>WhatsApp-based documentation service</strong>, operated by Bus Stand Akshaya Areekode. With over 10 years of trusted service in Malappuram, we assist Keralites locally and abroad to complete all government and legal paperwork without visiting any office.
+            </p>
+
+            <p class="about-text">
+            Our mission is simple: eliminate the need for physical visits and make your <strong>document preparation</strong> experience fast, accurate, and stress-free. From affidavits to registrations and certificates, we deliver everything at your fingertips.
+            </p>
+
+            <ul class="about-points">
+            <li class="about-point" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <div>
+                <h4>Experienced Team</h4>
+                <p>10+ years of experience in Kerala government documentation support.</p>
+                </div>
+            </li>
+            <li class="about-point" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <div>
+                <h4>100% WhatsApp Based</h4>
+                <p>Submit and track your documents entirely through WhatsApp.</p>
+                </div>
+            </li>
+            <li class="about-point" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <div>
+                <h4>400+ Services Offered</h4>
+                <p>Everything from Aadhaar corrections to Passport applications, made easy.</p>
+                </div>
+            </li>
+            </ul>
+        </div>
+
+        <!-- Right Column: WhatsApp Chat UI -->
+        <div data-aos="fade-left">
+            <div class="whatsapp-chat-container" role="presentation" aria-label="Sample WhatsApp chat example">
+            <div class="whatsapp-header">
+                <div class="header-profile">
+                <img src="images/avatar.png" alt="Customer profile picture" class="whatsapp-avatar">
+                <div class="profile-info">
+                    <span class="profile-name">Customer</span>
+                    <span class="profile-status">online</span>
+                </div>
+                </div>
+                <div class="header-actions" aria-hidden="true">
+                <button class="header-btn"><i class="fas fa-video"></i></button>
+                <button class="header-btn"><i class="fas fa-phone"></i></button>
+                <button class="header-btn"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+            </div>
+
+            <div class="whatsapp-chat-body">
+                <div class="chat-date-separator"><span class="date-pill">TODAY</span></div>
+
+                <div class="chat-bubble received">
+                I need a new passport.
+                <span class="message-time">09:30 AM</span>
+                </div>
+
+                <div class="chat-bubble sent">
+                Thank you for contacting <strong>Enteakshaya</strong>! Please share your ID proof and address proof to start your passport application.
+                <span class="message-time">09:31 AM</span>
+                <span class="message-status"><i class="fas fa-check-double"></i></span>
+                </div>
+
+                <div class="chat-bubble received">
+                I've attached my Aadhaar and SSLC book.
+                <span class="message-time">09:32 AM</span>
+                </div>
+
+                <div class="chat-bubble sent">
+                Documents received. Your passport application has been submitted successfully. We'll update you on the appointment schedule shortly.
+                <span class="message-time">09:33 AM</span>
+                <span class="message-status"><i class="fas fa-check-double"></i></span>
+                </div>
+            </div>
+
+            <div class="whatsapp-input-area">
+                <button class="emoji-btn" aria-label="Add emoji"><i class="far fa-smile"></i></button>
+                <button class="attach-btn" aria-label="Attach file"><i class="fas fa-paperclip"></i></button>
+                <input type="text" class="message-input" placeholder="Type a message" aria-label="Message input">
+                <button class="voice-btn" aria-label="Voice message"><i class="fas fa-microphone"></i></button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section how-it-works" aria-labelledby="how-it-works-title">
+    <div class="container">
+        <h2 id="how-it-works-title" class="section-title" data-aos="fade-up">
+        How Our WhatsApp Documentation Process Works
+        </h2>
+        
+        <div class="timeline">
+        
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-content">
+            <h3>Step 1: Contact Us on WhatsApp</h3>
+            <p>Send us a message with your documentation requirement. Our team responds promptly with service options and initial guidance.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-content">
+            <h3>Step 2: Receive Required Document Checklist</h3>
+            <p>We’ll inform you about the exact documents needed for your request and the applicable processing fees.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-content">
+            <h3>Step 3: Submit Documents via WhatsApp</h3>
+            <p>You can easily share scanned copies or images of your documents securely through WhatsApp. No physical visit needed.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-content">
+            <h3>Step 4: Expert Processing</h3>
+            <p>Our documentation experts handle form filling, application submission, and government portal updates on your behalf.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="timeline-content">
+            <h3>Step 5: Delivery to Your Doorstep</h3>
+            <p>Once your service is completed, we deliver the final documents digitally or via courier to your specified location.</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    <!--CALL TO ACTION (CTA)-->
+
+    <section class="whatsapp-cta-div" id="contact-wp">
+        <div class="container whatsapp-cta-div-container">
+            <div class="cta-text" data-aos="fade-right">
+                <h2>Need assistance? Chat with us now!</h2>
+                <p>Our documentation experts are just a message away.</p>
+            </div>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="whatsapp-btn-cta" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fab fa-whatsapp"></i> Start WhatsApp Chat
+            </a>
+            <a href="tel:+919XXXXXXXXX" class="whatsapp-btn-cta" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-phone-alt"></i> Call Us Now
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="why-choose" aria-labelledby="why-choose-title">
+    <div class="container">
+        <div class="why-choose">
+        
+        <!-- Left Content: Text -->
+        <div class="why-choose-text" data-aos="fade-right">
+            <h2 id="why-choose-title" class="why-choose-title">
+            Why Choose <span class="highlight">Enteakshaya</span> for Your Online Documentation Needs?
+            </h2>
+            <p class="why-choose-desc">
+            We blend <strong>10+ years of documentation expertise</strong> with the speed and simplicity of <strong>WhatsApp-based services</strong> to make legal and government paperwork fast, reliable, and stress-free.
+            </p>
+            <p class="why-choose-desc">
+            Whether you're based in <strong>Kerala or living abroad</strong>, Enteakshaya ensures you never need to physically visit an office. Your documents get processed accurately, quickly, and delivered to your doorstep or inbox.
+            </p>
+        </div>
+
+        <!-- Right Content: Stats -->
+        <div class="stats-card" data-aos="fade-left" data-aos-delay="200">
+            <div class="stats-header-section">
+            <h3 class="stats-header">Trusted by Thousands Across the Globe</h3>
+            <p class="stats-subheader">Here’s why individuals, professionals, and NRIs choose Enteakshaya.</p>
+            </div>
+
+            <ul class="stats-list">
+            <li class="stats-item" data-aos="fade-up" data-aos-delay="300">
+                <span class="stats-label">Documents Successfully Processed</span>
+                <div class="stats-bar-container">
+                <div class="stats-bar" style="width: 90%;" aria-hidden="true"></div>
+                </div>
+                <span class="stats-value">10,000+</span>
+            </li>
+            
+            <li class="stats-item" data-aos="fade-up" data-aos-delay="400">
+                <span class="stats-label">Client Satisfaction Rate</span>
+                <div class="stats-bar-container">
+                <div class="stats-bar" style="width: 98%;" aria-hidden="true"></div>
+                </div>
+                <span class="stats-value">98%</span>
+            </li>
+            
+            <li class="stats-item" data-aos="fade-up" data-aos-delay="500">
+                <span class="stats-label">Repeat Customers</span>
+                <div class="stats-bar-container">
+                <div class="stats-bar" style="width: 78%;" aria-hidden="true"></div>
+                </div>
+                <span class="stats-value">78%</span>
+            </li>
+            
+            <li class="stats-item" data-aos="fade-up" data-aos-delay="600">
+                <span class="stats-label">On-Time Document Delivery</span>
+                <div class="stats-bar-container">
+                <div class="stats-bar" style="width: 99%;" aria-hidden="true"></div>
+                </div>
+                <span class="stats-value">99%</span>
+            </li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- Google Review Call-to-Action Section -->
+    <section class="google-review-section section" id="google-review" aria-labelledby="google-review-title">
+    <div class="container review-container">
+        <div class="review-content" data-aos="fade-up">
+
+        <!-- Section Header -->
+        <div class="review-header">
+            <h2 id="google-review-title">Love Our Services?</h2>
+            <p class="review-subtitle">Your feedback means the world to us. Help others discover Enteakshaya by sharing your experience.</p>
+        </div>
+
+        <!-- Google Review Card -->
+        <div class="google-review-card">
+            <!-- Google Logo -->
+            <div class="google-logo" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+            </svg>
+            </div>
+
+            <!-- Rating Stars -->
+            <div class="review-rating" aria-label="5 star rating">
+            <div class="stars" role="img" aria-label="Rated 5 out of 5 stars">
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+                <span class="star" aria-hidden="true">★</span>
+            </div>
+            <p class="rating-text">Rated 5.0 on Google</p>
+            </div>
+
+            <!-- Encouragement Text -->
+            <p class="review-message">
+            Every review helps us grow and serve better. If we've made your documentation journey easier, please leave us a quick review.
+            </p>
+
+            <!-- Review Button -->
+            <a href="https://g.page/r/CaYcS9StR6hvEAE/review" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="google-review-btn" 
+            aria-label="Write a Google Review for Enteakshaya">
+            Write a Review
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+            </svg>
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials" aria-labelledby="testimonials-title">
+    <div class="container">
+        <h2 class="section-title" id="testimonials-title">What Our Clients Say</h2>
+
+        <div class="testimonial-container">
+        <div class="testimonial-slide" role="region" aria-label="Customer Testimonials Carousel">
+
+            <!-- Testimonial Card -->
+            <article class="testimonial" data-aos="fade-up">
+            <p class="testimonial-text">
+                I needed to get my personal documents processed in Kerala but couldn’t visit in person. Enteakshaya made everything so easy. Their fast, online service through WhatsApp allowed me to get the job done in no time. It’s the perfect solution for busy people like me!
+            </p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">
+                <i class="fas fa-user"></i>
+                </div>
+                <div class="testimonial-info">
+                <h4>Rajan Mathew</h4>
+                <p>Dubai, UAE</p>
+                </div>
+            </div>
+            </article>
+
+            <article class="testimonial" data-aos="fade-up" data-aos-delay="100">
+            <p class="testimonial-text">
+                I had to get my property documents registered in Kerala, and it was always a hassle. Enteakshaya’s quick and easy WhatsApp service took care of everything. I didn’t have to leave home. It couldn’t have been simpler!
+            </p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                <div class="testimonial-info">
+                <h4>Priya Menon</h4>
+                <p>Malappuram, Kerala</p>
+                </div>
+            </div>
+            </article>
+
+            <article class="testimonial" data-aos="fade-up" data-aos-delay="200">
+            <p class="testimonial-text">
+                Being an NRI, managing documents back home was always a challenge. Enteakshaya’s WhatsApp service made everything so much easier and faster. Truly impressive!
+            </p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                <div class="testimonial-info">
+                <h4>Mohammed Ali</h4>
+                <p>Riyadh, Saudi Arabia</p>
+                </div>
+            </div>
+            </article>
+
+            <article class="testimonial" data-aos="fade-up" data-aos-delay="300">
+            <p class="testimonial-text">
+                I needed to get my business documents processed in Kerala, and Enteakshaya made it so easy. Their WhatsApp service was quick and efficient. Perfect for busy professionals!
+            </p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                <div class="testimonial-info">
+                <h4>Vishnu Nair</h4>
+                <p>Kochi, Kerala</p>
+                </div>
+            </div>
+            </article>
+
+            <article class="testimonial" data-aos="fade-up" data-aos-delay="400">
+            <p class="testimonial-text">
+                I had a few legal documents that needed urgent processing. Enteakshaya’s team handled everything professionally via WhatsApp. I didn’t have to leave my home. Highly recommended!
+            </p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                <div class="testimonial-info">
+                <h4>Riya Sharma</h4>
+                <p>Chennai, Tamil Nadu</p>
+                </div>
+            </div>
+            </article>
+
+            <article class="testimonial" data-aos="fade-up" data-aos-delay="500">
+            <p class="testimonial-text">
+                I completed my K-SWIFT and Udyam Registration within minutes through Enteakshaya. The process was unbelievably smooth. It’s a game changer for entrepreneurs!
+            </p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                <div class="testimonial-info">
+                <h4>Vishnu K</h4>
+                <p>Thrissur, Kerala</p>
+                </div>
+            </div>
+            </article>
+
+            <article class="testimonial" data-aos="fade-up" data-aos-delay="600">
+            <p class="testimonial-text">
+                I had to renew my passport but didn’t have time for the formalities. Enteakshaya’s WhatsApp documentation process saved me hours. I got everything done from home—fast and reliable!
+            </p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                <div class="testimonial-info">
+                <h4>Ajay Gosh</h4>
+                <p>Bangalore, Karnataka</p>
+                </div>
+            </div>
+            </article>
+
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="testimonial-controls" aria-label="Testimonial slider controls">
+            <button class="testimonial-control" id="testimonial-prev" aria-label="Previous testimonial">
+            <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="testimonial-control" id="testimonial-next" aria-label="Next testimonial">
+            <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    
+    <!-- Contact Section with Map -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            
+            <!-- Map and Info Container -->
+            <div class="contact-container">
+                <!-- Left Side: Map & Trust Badges -->
+                <div class="contact-map-container">
+                    <!-- Interactive Map -->
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62605.43520695048!2d75.92402410941058!3d11.273191338069052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xabadaf145a77f3b1%3A0x6fa847add44b1ca6!2senteakshaya!5e0!3m2!1sen!2sin!4v1754576846045!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <!-- Trust Badges -->
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <div class="trust-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="trust-text">
+                                <span>Secure Communication</span>
+                            </div>
+                        </div>
+                        
+                        <div class="trust-badge">
+                            <div class="trust-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="trust-text">
+                                <span>24/7 Support</span>
+                            </div>
+                        </div>
+                        
+                        <div class="trust-badge">
+                            <div class="trust-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="trust-text">
+                                <span>10,000+ Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Info Cards (Existing) -->
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Enteakshaya, KPS Tower, Malappuram, Kerala, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+919946280727" target="_blank">+91 9946280727</a>
+                                <div class="response-badge">Quick response</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/919946280727" target="_blank">+91 9946280727</a>
+                                <div class="response-badge">Online now</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:enteakshaya@outlook.com" target="_blank">enteakshaya@outlook.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/enteakshaya/" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/enteakshaya/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Side: Enhanced Contact Form -->
+                <div class="contact-form">
+                    <div class="form-header">
+                        <div class="customer-satisfaction">
+                            <div class="satisfaction-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="satisfaction-text">
+                                <span class="satisfaction-rating">4.9/5</span> customer satisfaction
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input id="name"  type="text"  class="form-control" placeholder="Enter your name"  required autocomplete="name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input id="email" type="email" class="form-control" placeholder="Enter your email" autocomplete="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" type="tel"   class="form-control" placeholder="Enter your phone number" required autocomplete="tel">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="How can we help you?" rows="4" required></textarea>
+                        </div>
+                        
+                        <input type="text" id="company" name="company" style="display:none" tabindex="-1" autocomplete="off">
+
+                        <div class="privacy-notice">
+                            <i class="fas fa-lock privacy-icon"></i>
+                            <span>Your information is secure and will never be shared</span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+
+                        <!-- Status message -->
+                        <div id="formStatus"
+                            aria-live="polite"
+                            style="margin-top:10px;padding:8px 12px;font-size:14px;border-radius:6px;display:none;">
+                        </div>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer" aria-labelledby="footer-heading">
+    <div class="container">
+        <div class="footer-container">
+
+        <!-- About Section -->
+        <div class="footer-col footer-about">
+            <h3 id="footer-heading">About EnteAkshaya</h3>
+            <p>EnteAkshaya is a virtual documentation platform launched by Bus Stand Akshaya Areekode. We provide secure, fast, WhatsApp-based documentation services for Keralites, both in India and abroad.</p>
+            <p>With 10+ years of trusted experience, we're Malappuram’s most reliable name in digital documentation.</p>
+            <a href="https://wa.me/919946280727" class="whatsapp-cta" aria-label="Chat with EnteAkshaya on WhatsApp">
+            <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+            </a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+            <li class="footer-link"><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li class="footer-link"><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li class="footer-link"><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li class="footer-link"><a href="#how-it-works"><i class="fas fa-chevron-right"></i> How It Works</a></li>
+            <li class="footer-link"><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+            <li class="footer-link"><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-col">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+            <a href="https://www.facebook.com/enteakshaya" class="social-icon" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/enteakshaya" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <!-- <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
+            <a href="https://www.youtube.com/@enteakshaya-media" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="contact-info">
+            <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>KPS Tower, Areekode, Malappuram, Kerala</span>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+919946280727">+91 99462 80727</a>
+            </div>
+            <div class="footer-contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:enteakshaya@outlook.com">enteakshaya@outlook.com</a>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+        &copy; 2025 <a href="#">EnteAkshaya</a>. All Rights Reserved. Designed by <a href="https://www.instagram.com/enteakshaya/" target="_blank">Team EnteAkshaya</a>
+        </div>
+    </div>
+    </footer>
+
+    
+    <!-- social media Float Button -->
+    <a href="https://wa.me/919946280727" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <a href="https://instagram.com/enteakshaya" target="_blank" class="instagram-btn">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init({
+            // Global settings:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 800, // values from 0 to 3000, with step 50ms
+            easing: 'ease-in-out', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element should trigger the animation
+
+        });
+    </script>
+    <script src="scripts.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>
