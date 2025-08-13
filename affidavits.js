@@ -157,9 +157,6 @@ class AffidavitsManager {
     const fileUrl = toDirectDownload(rawUrl);
     const hasLink = /^https?:\/\//i.test(fileUrl);   // simpler, more tolerant
 
-    // Debug once in console so you can verify mapping
-    console.debug('[Affidavit link]', item.Title, { rawUrl, fileUrl, hasLink });
-
     const waText = `Hi EnteAkshaya, I need the affidavit: ${item.Title || ''}`;
     const waHref = `https://wa.me/919946280727?text=${encodeURIComponent(waText)}`;
 
