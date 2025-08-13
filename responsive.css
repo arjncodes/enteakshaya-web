@@ -1,6 +1,214 @@
+/* ================================
+   INDEX ONLY – Mobile & Small Tablet
+   Tight hero + phone mockup sizing
+   ================================ */
+
+/* Anti-bleed safety */
+html { max-width: 100%; overflow-x: hidden; }
+body { overflow-x: hidden; overflow-y: auto; }
+
+/* Container breathing on phones */
+@media (max-width: 767px) {
+  .container { padding-left: 14px; padding-right: 14px; }
+}
+
+/* -------- HERO (index) -------- */
+@media (max-width: 1200px) {
+  .hero-wrapper { gap: 40px; }
+}
+@media (max-width: 992px) {
+  .hero { padding: 60px 0; }
+  .hero-wrapper { flex-direction: column; align-items: center; gap: 28px; }
+  .hero-content { width: 100%; text-align: center; margin-bottom: 8px; }
+  .hero-title { font-size: clamp(2.1rem, 6.2vw, 2.6rem); }
+  .hero-subtitle { font-size: 1rem; max-width: 680px; margin-left: auto; margin-right: auto; }
+  .hero-btns { justify-content: center; gap: 10px; }
+  .hero-image-wrapper { width: 82%; max-width: 320px; min-width: 0; }
+  .hero-image { width: 100%; max-width: 320px; }
+}
+@media (max-width: 576px) {
+  .hero { padding: 44px 0; }
+  .hero-wrapper { gap: 22px; }
+  .hero-title { font-size: clamp(1.9rem, 7vw, 2.2rem); }
+  .hero-image-wrapper { width: 88%; max-width: 280px; }
+  .hero-image { max-width: 280px; }
+}
+
+/* If you have blob decorations on the hero, keep them inside the viewport */
+@media (max-width: 992px) {
+  .blob-1 { left: 50%; right: auto; transform: translate(-50%, -50%); }
+  .blob-2 { left: 64%; right: auto; bottom: -8%; }
+}
+@media (max-width: 576px) {
+  .blob-1 { width: 200px; height: 200px; }
+  .blob-2 { width: 150px; height: 150px; }
+}
+
+/* -------- WHATSAPP INTRO (index) --------
+   (the phone/chat mockup section at the top) */
+@media (max-width: 992px) {
+  .whatsapp-intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 24px 0;
+  }
+  .intro-branding { text-align: center; }
+  .intro-logo { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+  .intro-tagline {
+    font-size: .95rem;
+    max-width: 90vw;
+    margin-left: auto; margin-right: auto;
+    line-height: 1.4;
+  }
+
+  /* Phone mockup fits any mobile screen without pushing layout */
+  .whatsapp-intro-phone-container {
+    width: min(92vw, 360px);
+    /* keep portrait shape without fixed height */
+    aspect-ratio: 9 / 19.5;
+    height: auto;
+    flex: 0 0 auto;
+  }
+  .whatsapp-intro-phone-mockup,
+  .whatsapp-intro-screen {
+    width: 100%; height: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0,0,0,.12);
+  }
+
+  /* Chat bubbles never overflow */
+  .intro-showcase-chat-body { padding: 10px; }
+  .intro-showcase-bubble { max-width: 85%; font-size: .92rem; }
+}
+
+/* Ultra-small phones */
+@media (max-width: 380px) {
+  .whatsapp-intro-phone-container { width: 94vw; max-width: 320px; }
+  .intro-showcase-bubble { font-size: .88rem; }
+}
+
+/* -------- NAV (prevent off-canvas menu from widening page) -------- */
+@media (max-width: 991px) {
+  .header-inner { position: relative; }
+  .mobile-menu-btn { display: inline-block; }
+  .nav-menu {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 82vw; max-width: 360px;
+    background: #fff;
+    box-shadow: 8px 0 24px rgba(0,0,0,.12);
+    padding: 24px 16px;
+    list-style: none;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .nav-menu.active,
+  .nav-menu.is-open { transform: translateX(0); }
+}
+
+/* -------- FOOTER quick wrap so links don't stack one-per-line forever -------- */
+.footer-links {
+  display: flex; flex-wrap: wrap;
+  gap: 10px 20px; padding: 0; margin: 0; list-style: none;
+}
+.footer-link { flex: 1 1 auto; min-width: 120px; }
+
+/* -------- Generic anti-bleed for media -------- */
+img, svg, video, canvas, iframe { max-width: 100%; height: auto; display: block; }
+
+/* Optional: reduce motion if user prefers */
+@media (prefers-reduced-motion: reduce) {
+  .hero-image { animation: none !important; }
+  .intro-showcase-bubble { animation: none !important; }
+}
+
+
+
 @media screen and (max-width: 1200px) {
     .hero-title {
         font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    .hero-wrapper {
+        gap: 40px; /* add spacing between text & image */
+    }
+    .hero-image-wrapper {
+        width: 40%;
+    }
+    .hero-image {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* extra spacing between content & image */
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-image-wrapper {
+        width: 80%;
+        max-width: 320px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .hero-image-wrapper {
+        width: 85%;
+        max-width: 300px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-wrapper {
+        gap: 20px;
+    }
+
+    .hero-image-wrapper {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .hero-image {
+        width: 100%;
     }
 }
 
